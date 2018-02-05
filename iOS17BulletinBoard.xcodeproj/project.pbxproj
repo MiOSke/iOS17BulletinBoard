@@ -8,20 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		57BBB7E12028C7B300836CA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BBB7E02028C7B300836CA0 /* AppDelegate.swift */; };
-		57BBB7E32028C7B300836CA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BBB7E22028C7B300836CA0 /* ViewController.swift */; };
 		57BBB7E62028C7B300836CA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57BBB7E42028C7B300836CA0 /* Main.storyboard */; };
 		57BBB7E82028C7B400836CA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57BBB7E72028C7B400836CA0 /* Assets.xcassets */; };
 		57BBB7EB2028C7B400836CA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57BBB7E92028C7B400836CA0 /* LaunchScreen.storyboard */; };
+		57BBB7F82028CCA500836CA0 /* NameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BBB7F72028CCA500836CA0 /* NameTableViewController.swift */; };
+		57BBB7FB2028CF4A00836CA0 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BBB7FA2028CF4A00836CA0 /* Message.swift */; };
+		57BBB7FD2028D18700836CA0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BBB7FC2028D18700836CA0 /* Constants.swift */; };
+		57BBB7FF2028D42A00836CA0 /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BBB7FE2028D42A00836CA0 /* MessageController.swift */; };
+		57BBB8022028D59900836CA0 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BBB8012028D59900836CA0 /* CloudKitManager.swift */; };
+		57BBB8042028D8CE00836CA0 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57BBB8032028D8CE00836CA0 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		57BBB7DD2028C7B300836CA0 /* iOS17BulletinBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS17BulletinBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57BBB7E02028C7B300836CA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		57BBB7E22028C7B300836CA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		57BBB7E52028C7B300836CA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57BBB7E72028C7B400836CA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57BBB7EA2028C7B400836CA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57BBB7EC2028C7B400836CA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57BBB7F22028C7ED00836CA0 /* iOS17BulletinBoard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOS17BulletinBoard.entitlements; sourceTree = "<group>"; };
+		57BBB7F72028CCA500836CA0 /* NameTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTableViewController.swift; sourceTree = "<group>"; };
+		57BBB7FA2028CF4A00836CA0 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		57BBB7FC2028D18700836CA0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		57BBB7FE2028D42A00836CA0 /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
+		57BBB8012028D59900836CA0 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
+		57BBB8032028D8CE00836CA0 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57BBB8042028D8CE00836CA0 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +52,7 @@
 			children = (
 				57BBB7DF2028C7B300836CA0 /* iOS17BulletinBoard */,
 				57BBB7DE2028C7B300836CA0 /* Products */,
+				57BBB7F32028C7F100836CA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +67,51 @@
 		57BBB7DF2028C7B300836CA0 /* iOS17BulletinBoard */ = {
 			isa = PBXGroup;
 			children = (
+				57BBB7F22028C7ED00836CA0 /* iOS17BulletinBoard.entitlements */,
 				57BBB7E02028C7B300836CA0 /* AppDelegate.swift */,
-				57BBB7E22028C7B300836CA0 /* ViewController.swift */,
-				57BBB7E42028C7B300836CA0 /* Main.storyboard */,
+				57BBB8012028D59900836CA0 /* CloudKitManager.swift */,
+				57BBB8002028D43300836CA0 /* Model + Controllers */,
+				57BBB7F92028CF2D00836CA0 /* Views + Controllers */,
+				57BBB7F62028CC7C00836CA0 /* Resources */,
+			);
+			path = iOS17BulletinBoard;
+			sourceTree = "<group>";
+		};
+		57BBB7F32028C7F100836CA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57BBB8032028D8CE00836CA0 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57BBB7F62028CC7C00836CA0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				57BBB7E72028C7B400836CA0 /* Assets.xcassets */,
 				57BBB7E92028C7B400836CA0 /* LaunchScreen.storyboard */,
 				57BBB7EC2028C7B400836CA0 /* Info.plist */,
 			);
-			path = iOS17BulletinBoard;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		57BBB7F92028CF2D00836CA0 /* Views + Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				57BBB7E42028C7B300836CA0 /* Main.storyboard */,
+				57BBB7F72028CCA500836CA0 /* NameTableViewController.swift */,
+			);
+			path = "Views + Controllers";
+			sourceTree = "<group>";
+		};
+		57BBB8002028D43300836CA0 /* Model + Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				57BBB7FA2028CF4A00836CA0 /* Message.swift */,
+				57BBB7FE2028D42A00836CA0 /* MessageController.swift */,
+				57BBB7FC2028D18700836CA0 /* Constants.swift */,
+			);
+			path = "Model + Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +147,14 @@
 					57BBB7DC2028C7B300836CA0 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -136,8 +194,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57BBB7E32028C7B300836CA0 /* ViewController.swift in Sources */,
+				57BBB7FB2028CF4A00836CA0 /* Message.swift in Sources */,
+				57BBB7F82028CCA500836CA0 /* NameTableViewController.swift in Sources */,
+				57BBB8022028D59900836CA0 /* CloudKitManager.swift in Sources */,
+				57BBB7FF2028D42A00836CA0 /* MessageController.swift in Sources */,
 				57BBB7E12028C7B300836CA0 /* AppDelegate.swift in Sources */,
+				57BBB7FD2028D18700836CA0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,9 +336,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iOS17BulletinBoard/iOS17BulletinBoard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2LP5P6TWN;
-				INFOPLIST_FILE = iOS17BulletinBoard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iOS17BulletinBoard/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.broCode.iOS17BulletinBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,9 +352,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iOS17BulletinBoard/iOS17BulletinBoard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2LP5P6TWN;
-				INFOPLIST_FILE = iOS17BulletinBoard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iOS17BulletinBoard/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.broCode.iOS17BulletinBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
